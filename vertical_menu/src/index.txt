@@ -1,0 +1,124 @@
+Creating a navigation menu with rounded borders as you described, where odd links have a rounded right border and even links have a rounded left border to create a wave-like appearance, can be achieved with CSS. Here's an example:
+
+HTML:
+```html
+<nav>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+    <li><a href="#">Link 5</a></li>
+    <li><a href="#">Link 6</a></li>
+  </ul>
+</nav>
+```
+
+CSS:
+```css
+nav {
+  background-color: #333; /* Background color for the navigation */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  background-color: #444; /* Background color for the links */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 2px solid #333; /* Right border for odd links */
+}
+
+/* Apply styles for even links */
+li:nth-child(even) a {
+  border-left: 2px solid #333; /* Left border for even links */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Style the first and last links for a complete wave effect */
+li:first-child a {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: 2px solid #333;
+}
+
+li:last-child a {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-right: 2px solid #333;
+}
+```
+
+In this example:
+
+- We've created an unordered list (`<ul>`) within the navigation (`<nav>`).
+
+- Each list item (`<li>`) represents a link, and each link (`<a>`) has its styles defined.
+
+- Odd links have rounded right borders, and even links have rounded left borders to create the wave-like appearance. We achieve this by using the `:nth-child(even)` and `:first-child` and `:last-child` selectors to target specific links and apply the appropriate border-radius and border properties.
+
+- You can customize the colors and padding as needed to match your design.
+
+
+nav {
+  background-color: #333; /* Background color for the navigation */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  background-color: #444; /* Background color for the links */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 2px solid #333; /* Bottom border for odd links */
+  margin-bottom: 2px; /* Spacing between links */
+}
+
+/* Apply styles for even links */
+li:nth-child(even) a {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: 2px solid #333; /* Left border for even links */
+  border-bottom: none; /* Remove the bottom border for even links */
+}
+
+/* Style the first and last links for a complete wave effect */
+li:first-child a {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+li:last-child a {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: 2px solid #333; /* Left border for the last link */
+  margin-bottom: 0; /* Remove the margin for the last link */
+}
