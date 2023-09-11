@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Space+Grotesk&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #383838;
+  overflow-x: hidden;
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+}
+html body {
+  margin: 0;
+  padding: 20px 30px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+html body .header {
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+}
+html body .header .left {
+  margin: 0;
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html body .header .left a {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+html body .header .right {
+  margin: 0;
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+html body .header .right .material-symbols-outlined {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 200;
+  cursor: pointer;
+}
+html body main {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  max-width: 600px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+html body main .task-list {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  border-radius: 10px;
+}
+html body main .task-list h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+html body main .task-list .tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+html body main .task-list .tasks .task {
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  position: relative;
+}
+html body main .task-list .tasks .task .material-symbols-outlined {
+  color: white;
+  font-weight: 200;
+  font-size: 2rem;
+  cursor: pointer;
+}
+html body main .task-list .tasks .task h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 100;
+}
+html body main .task-list .tasks .task .delete {
+  position: absolute;
+  right: 20px;
+}
+html body main .task-list form {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main .task-list form .add {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body main .task-list form .add input {
+  width: 80%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 50px;
+  background-color: #1b1b1b;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Kanit";
+}
+html body main .task-list form .add input::-moz-placeholder {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: "Kanit";
+}
+html body main .task-list form .add input::placeholder {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: "Kanit";
+}
+html body main .task-list form .add .material-symbols-outlined {
+  position: absolute;
+  right: calc(10% + 20px);
+  color: white;
+  font-weight: 200;
+}/*# sourceMappingURL=index.css.map */
