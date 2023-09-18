@@ -26,3 +26,14 @@ collapse.addEventListener("click", () => {
     click = 0;
   }
 });
+
+const links = document.querySelectorAll("#menu-link");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    links.forEach((otherlink) => {
+      otherlink.classList.remove("highlight");
+    });
+    link.classList.add("highlight");
+  });
+});

@@ -129,6 +129,7 @@ html body .sidebar .top ul a {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  transition: all 0.5s ease;
 }
 html body .sidebar .top ul a .material-symbols-outlined {
   margin: 0;
@@ -168,21 +169,4 @@ html body main .background {
   font-size: 20rem;
   opacity: 0.3;
   position: absolute;
-}
-html body main .front {
-  margin: 0;
-  padding: 0;
-  width: 75%;
-  max-width: 500px;
-  height: 700px;
-  overflow: hidden;
-  border: 1px solid #363636;
-  box-shadow: 0px 0px 20px 5px rgb(119, 119, 119);
-  border-radius: 20px;
-  background-color: #ffffff;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
