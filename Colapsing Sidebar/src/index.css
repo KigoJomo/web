@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../res/fonts/Poppins/Poppins-Regular.ttf") format("truetype"), url("../res/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Abeezee";
+  src: url("../res/fonts/ABeeZee/AbeezeeRegular.otf") format("opentype");
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+html .desc {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: 30px;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .sidebar {
+  margin: 0;
+  padding: 10px 20px;
+  width: 200px;
+  height: 90%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px rgb(119, 119, 119);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+html body .sidebar .top {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+html body .sidebar .top .logo {
+  margin: 0;
+  padding: 0;
+  padding-left: 2px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+html body .sidebar .top .logo .material-symbols-outlined {
+  font-size: 1.75rem;
+}
+html body .sidebar .top .logo h1 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+html body .sidebar .top .collapse {
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+html body .sidebar .top .collapse .material-symbols-outlined {
+  font-size: 1.75rem;
+}
+html body .sidebar .top .collapse h2 {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+html body .sidebar .top ul {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: flex-start;
+  gap: 20px;
+}
+html body .sidebar .top ul a {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+html body .sidebar .top ul a .material-symbols-outlined {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+html body .sidebar .top ul a h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600;
+}
+html body .sidebar .top ul .highlight {
+  background-color: black;
+  color: white;
+}
+html body .sidebar .top ul .highlight h3 {
+  font-weight: 100;
+}/*# sourceMappingURL=index.css.map */
