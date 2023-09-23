@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+html body {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+html body header {
+  margin-top: 10px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Play", sans-serif;
+  letter-spacing: 8px;
+  position: relative;
+  z-index: 2;
+}
+html body header h1 .drip {
+  z-index: 0;
+  position: absolute;
+  height: 5px;
+  width: 25px;
+  bottom: 0;
+  background-color: #2aa72a;
+  color: white;
+  border-radius: 50px;
+}
+html body header .material-symbols-outlined {
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #e6e6e6;
+}
+html body header .cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body header .cart .counter {
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 0px 5px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+html body .search {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body .search input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #eeeeee;
+  border: none;
+  padding: 0 10px;
+  padding-left: 40px;
+}
+html body .search .material-symbols-outlined {
+  position: absolute;
+  left: 10px;
+}
+html body .shipping-address {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+html body .shipping-address .material-symbols-outlined {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #2aa72a;
+}
+html body .shipping-address h6 {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+html body .shipping-address h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+html body .shipping-address .navigate {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0px;
+}
+html body .brands {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-x: scroll;
+  width: 100%;
+  padding: 5px 5px;
+}
+html body .brands::-webkit-scrollbar {
+  display: none;
+}
+html body .brands .brand-image {
+  flex: none;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.685);
+}
+html body .brands .brand-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+html body .promo {
+  width: 100%;
+  max-height: 175px;
+  border-radius: 20px;
+  padding: 20px 10px;
+  background: linear-gradient(90deg, black, rgb(22, 22, 22), rgb(48, 48, 48));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+html body .promo img {
+  width: 150px;
+}
+html body .promo .promo-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+html body .promo .promo-desc h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
+html body .promo .promo-desc h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(187, 187, 187);
+  text-transform: capitalize;
+}
+html body .promo .promo-desc a {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #2aa72a;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */
